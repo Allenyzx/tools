@@ -17,7 +17,7 @@ update_time: 2017-07-30
 class Sqlforpandas:
 
     def __init__(self,connection):
-        'mysql+pymysql://root:chenluyao@localhost:3306/local'
+        'mysql+pymysql://user:password@localhost:3306/local'
         if type(connection) == dict:
             conn =connection
             connection = '{0}://{1}:{2}@{3}:{4}/{5}?charset=utf8'.format(
